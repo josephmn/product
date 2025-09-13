@@ -1,0 +1,5 @@
+# Renombra este archivo a .env y actualiza las variables según sea necesario
+# ORCLPDB1 : Nombre del servicio de la base de datos Oracle, en mi caso por ejemplo, ORCLPDB1
+ORACLE_URL=jdbc:oracle:thin:@//localhost:1521/ORCLPDB1
+ORACLE_USER=tu_user
+ORACLE_PASSWORD=tu_password

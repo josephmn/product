@@ -17,9 +17,23 @@
    https://github.com/josephmn/product
    ```
 
-2. Ejecutar: el proyecto principal **ProductApplication** (en mi caso uso **IntelliJ IDEA**):
+2. Existe un archivo en la raíz del proyecto llamado env, el cual contiene las variables de entorno para la conexión a la base de datos Oracle, estas variables son:
 
-   ![img.png](src/main/resources/image/img.png)
+   ```
+   ORACLE_URL=jdbc:oracle:thin:@//localhost:1521/ORCLPDB1
+   ORACLE_USER=tu_user
+   DB_PASSWORD=tu_password
+   ```
+   
+> [!CAUTION]
+> Cambiar los valores según la configuración de tu base de datos Oracle y cambiar el nombre del archivo a: **.env**.
+   
+3. Ejecutar: el proyecto principal **ProductApplication** (en mi caso uso **IntelliJ IDEA**):
+
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+   ```
 
 ## Uso
 1. Para realizar la prueba del API:
